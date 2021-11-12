@@ -52,6 +52,88 @@ a:hover{
     color: rgb(221, 221, 221);
 }
 
+.wrapper{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (max-width: 900px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 'home'
+                             'about'
+                             'testimonials'
+                             'contact';
+        overflow: hidden;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 'content__text'
+                             'content__display';
+        width: 85vh;
+    }
+
+    .content__display{
+        grid-area: "content__text";
+    }
+
+    .text{
+        grid-area: "content__display";
+    }
+
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    grid-gap: 1.5rem;
+    margin: 1.5rem;
+    
+}
+
+#particles-js{
+    background-color: #051427;
+    border-radius: 50px;
+    position: absolute;
+    
+}
+
+.content__display{
+    grid-column: 1;
+    display: grid;
+}
+
+.content__logo{
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    color: #121212;
+}
+
+.content__text{
+    grid-column: 2;
+    background-color: #24292f;
+    color: #eee;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem;
+    font-size: larger;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+
+
+
 
 
 

@@ -1,0 +1,32 @@
+{
+  "particles":{
+    "number":{
+      "value":200,
+      "density.enable": true
+    },
+
+    "color":{
+      "value": "#f8bc04"
+    },
+
+    "size":{
+      "value": 3,
+      "random": true
+    },
+
+    "line_linked":{
+      "enable": false
+    },
+
+    "interactivity":{
+      "detect_on": "canvas",
+      "events":{
+        "onhover":{
+          "enable": false
+        }
+      }
+    }
+    
+
+  }
+}
