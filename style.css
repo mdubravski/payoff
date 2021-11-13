@@ -1,15 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Noto Sans, sans-serif;
     background-color: #f6f8fa;
 }
 
-.nav{
+/* Start Nav */
+.nav {
     display: grid;
     min-height: 4rem;
     grid-auto-flow: column;
@@ -19,19 +20,22 @@ body{
     color: #fff;
 }
 
-.logo{
+.logo {
     display: grid;
     align-items: center;
     padding-left: 1.5rem;
     font-family: Rubik, sans-serif;
     cursor: pointer;
-
 }
 
-.nav__items{
+.nav{
+    transition: 0.3 all ease;
+}
+
+.nav__items {
     display: grid;
     justify-content: right;
-    grid-template-columns: repeat(3, minmax(min-content,100px));
+    grid-template-columns: repeat(3, minmax(min-content, 100px));
     grid-gap: 1rem;
     align-items: center;
     justify-items: center;
@@ -39,7 +43,7 @@ body{
     padding-right: .5rem;
 }
 
-a{
+a {
     color: black;
     cursor: pointer;
     text-decoration: none;
@@ -48,96 +52,117 @@ a{
     color: #fff;
 }
 
-a:hover{
+a:hover {
     color: rgb(221, 221, 221);
 }
 
-.wrapper{
+.hamburger{
+
+}
+
+.first-bar{
+
+}
+
+.second-bar{
+
+}
+
+.third-bar{
+
+}
+/* End Nav */
+
+
+/* Start Content */
+.wrapper {
     display: grid;
     align-items: center;
     justify-items: center;
 }
 
-@media (max-width: 900px){
-    .wrapper{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: 'home'
-                             'about'
-                             'testimonials'
-                             'contact';
-        overflow: hidden;
-    }
-
-    .home {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
-        grid-template-areas: 'content__text'
-                             'content__display';
-        width: 85vh;
-    }
-
-    .content__display{
-        grid-area: "content__text";
-    }
-
-    .text{
-        grid-area: "content__display";
-    }
-
-}
-
-.home{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 500px;
-    grid-gap: 1.5rem;
-    margin: 1.5rem;
-    
-}
-
-#particles-js{
+#particles-js {
     background-color: #051427;
-    border-radius: 50px;
     position: absolute;
-    
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 4rem;
+    z-index: -10;
+}
+
+.home__wrapper{
+    display: grid;
+    grid-template-columns: 1 / 1fr;
 }
 
 .content__display{
-    grid-column: 1;
-    display: grid;
-}
-
-.content__logo{
-    font-size: 60px;
     position: absolute;
-    top: 45%;
-    left: 8%;
-    color: #121212;
+    top: 33%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand oftranslateX(-50%) and translateY(-50%) */
+    animation: glow1 2s ease-in-out infinite alternate;
 }
 
 .content__text{
-    grid-column: 2;
-    background-color: #24292f;
-    color: #eee;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 3rem;
-    font-size: larger;
-    align-self: center;
-    justify-self: center;
-
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 400px;
+    animation: glow2 2s ease-in-out infinite alternate;
 }
 
+.content__text h1{
+    color: #C6B9CD;
+}
 
+.content__btn button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Noto Sans, sans-serif;
+    height: 30px;
+    width: 90px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0096FF;
+    animation: hover 2s ease-in-out infinite alternate;
+    cursor: pointer;
+}
 
+  @-webkit-keyframes glow1 {
+    from {
+      text-shadow: 0 0 100px #fe7f2d;
+    }
+    to {
+      text-shadow: 0 0 50px #fe7f2d;
+    }
+  }
 
+  @-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 200px #fe7f2d;
+    }
+    to {
+      text-shadow: 0 0 100px #fe7f2d;
+    }
+  }
 
+  @-webkit-keyframes hover {
+    from {
+      top: 65%;
+    }
+    to {
+        top: 66%;
+    }
+  }
 
-
-
-
-
-
-
+.logo__home{
+    color: #fff;
+    font-size: 60px;
+    
+}
