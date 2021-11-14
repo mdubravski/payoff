@@ -134,47 +134,41 @@ a:hover {
 /* End Nav */
 
 
-/* Start Content */
+/* Start Home Content */
 .wrapper {
     display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 2rem;
-    transition: 0.3 all ease;
+    grid-template-rows: repeat(4,100vh);
+    
 }
 
 #particles-js {
     background-color: #051427;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     left: 0;
-    top: 4rem;
     z-index: -10;
 }
 
-.home__wrapper{
-    display: grid;
-    grid-template-columns: 1 / 1fr;
+.home{
+  display: grid;
+  grid-template-columns: 1 / 1fr;
+  grid-template-rows: repeat(3,min-content);
+  align-content: center;
+  justify-items: center;
+  grid-gap: 3rem;
 }
 
 .content__display{
-    position: absolute;
-    top: 33%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%); /* This is a shorthand oftranslateX(-50%) and translateY(-50%) */
     animation: glow1 2s ease-in-out infinite alternate;
 }
 
 .content__text{
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     width: 400px;
     animation: glow2 2s ease-in-out infinite alternate;
+    text-align: center;
+    align-items: start;
 }
 
 .content__text h1{
@@ -182,18 +176,20 @@ a:hover {
 }
 
 .content__btn button{
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: Noto Sans, sans-serif;
-    height: 30px;
-    width: 90px;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
     border-radius: 50px;
     border: none;
     background-color: #0096FF;
-    animation: hover 2s ease-in-out infinite alternate;
     cursor: pointer;
+}
+
+.content__btn:hover{
+  opacity: 0.75;
+  animation: glow2 2s ease-in-out infinite alternate;
+  transition: all 0.3s ease;
 }
 
   @-webkit-keyframes glow1 {
@@ -216,15 +212,85 @@ a:hover {
 
   @-webkit-keyframes hover {
     from {
-      top: 65%;
+      margin: 0;
     }
     to {
-        top: 66%;
+        margin-top: 5px;
     }
   }
 
 .logo__home{
     color: #fff;
-    font-size: 60px;
+    font-size: 90px;
     
+}
+/* End  Home Content*/
+/* Start About */
+
+.about{
+  display: grid;
+  background-color: #24292f;
+  color: #fff;
+  align-items: center;
+}
+
+.about__h1{
+  font-size: 46px;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.about__grid{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1, 50vh);
+  grid-gap: 1rem;
+  align-items: start;
+  justify-items: center;
+}
+
+.about__modal{
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #111111;
+}
+
+.about__modal h1{
+  padding-bottom: 1rem;
+}
+
+.about__modal__btn__wrapper{
+  text-align: center;
+}
+
+.about__modal__btn{
+  margin: 1rem;
+  font-family: Noto Sans, sans-serif;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  color: #111111;
+  background-color: #66cc33;
+  cursor: pointer;
+}
+
+.about__modal__btn:hover{
+  transition: all 0.3s ease;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+/* End About */
+
+.testimonials{
+  height: 100vh;
+}
+
+.contact{
+  height: 100vh;
 }
