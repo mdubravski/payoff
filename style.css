@@ -137,8 +137,8 @@ a:hover {
 /* Start Home Content */
 .wrapper {
     display: grid;
-    grid-template-rows: repeat(4,100vh);
-    
+    grid-template-rows: repeat(4,fit-content);
+    overflow: hidden;
 }
 
 #particles-js {
@@ -157,6 +157,7 @@ a:hover {
   align-content: center;
   justify-items: center;
   grid-gap: 3rem;
+  height: 100vh;
 }
 
 .content__display{
@@ -228,10 +229,26 @@ a:hover {
 /* Start About */
 
 .about{
-  display: grid;
+  box-sizing: border-box;
   background-color: #24292f;
   color: #fff;
   align-items: center;
+  height: fit-content;
+  padding: 2rem;
+
+}
+
+.about__text{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.about__quote{
+  font-weight: 200;
+  color: rgb(156, 156, 156);
+  margin-top: 2rem;
 }
 
 .about__h1{
@@ -245,10 +262,10 @@ a:hover {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(1, 50vh);
-  grid-gap: 1rem;
-  align-items: start;
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-template-rows: repeat(auto-fill, 300px);
+  grid-gap: 2rem;
+  align-items: center;
   justify-items: center;
 }
 
@@ -262,6 +279,7 @@ a:hover {
 .about__modal h1{
   padding-bottom: 1rem;
 }
+
 
 .about__modal__btn__wrapper{
   text-align: center;
@@ -284,13 +302,32 @@ a:hover {
   transition: all 0.3s ease;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
-
-/* End About */
-
-.testimonials{
-  height: 100vh;
 }
 
+@media (max-width: 700px) {
+  .about__text{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .about__grid{
+    justify-content: center;
+  }
+}
+/* End About */
+
+/* Start Testimonials */
+.testimonials{
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  background-color: #24292f;
+  color: #fff;
+  align-items: center;
+}
+
+/* End Testimonials */
 .contact{
   height: 100vh;
 }

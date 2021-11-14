@@ -16,9 +16,9 @@
     <div class="nav">
         <h1 class="logo">Payoff</h1>
         <div class="nav__items">
-            <a href="#">About</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
         </div>
         <div class="hamburger">
             <span class="first-bar"></span>
@@ -27,13 +27,13 @@
         </div>
     </div>
     <div class="menu">
-        <li class="menu__item">Home</li>
-        <li class="menu__item">About</li>
-        <li class="menu__item">Testimonials</li>
-        <li class="menu__item">Contact</li>
+        <li class="menu__item"><a href="#home">Home</a></li>
+        <li class="menu__item"><a href="#about">About</a></li>
+        <li class="menu__item"><a href="#testimonials">Testimonials</a></li>
+        <li class="menu__item"><a href="#contact">Contact</a></li>
     </div>
     <div class="wrapper">
-        <section class="home">
+        <section class="home" id="home">
             <div class="particles-js" id="particles-js"></div>
             <div class="content__display" >
                 <div class="content__logo">
@@ -45,39 +45,46 @@
                 </h1>
             </div>
             <div class="content__btn">
-                <button>Learn More</button>
+                <button><a href="#about">Learn More</a></button>
             </div>
         </section>
-        <section class="about">
-            <h1 class="about__h1">What we do for</h1>
+        <section class="about" id="about">
+            <div class="about__text">
+                <h1 class="about__h1">What we do for</h1>
+                <h4 class="about__quote"><i>"Payoff helped me pay off my 4 merchant cash advances, keep my doors open, and fed my family."</i><br>- 'Susan'</h4>
+            </div>
             <div class="about__grid">
             <div class="about__modal" style="background: #f6bc28 ;">
-                <h1>Small Business Debt</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores itaque nam accusamus hic sed eligendi omnis soluta, id rem, facere rerum vero quidem nisi, numquam reiciendis assumenda laborum animi!</p>
+                <h1>Small Business</h1>
+                <p>We partner with you to stop the bleeding flow of cash, giving you the time you need to pay your creditors. Payoff allows you to pay all of your creditors using a realistic monthly budget, keeing you in business.</p>
                 <div class="about__modal__btn__wrapper">
                     <button class="about__modal__btn">Get Started</button>
                 </div>
             </div>
             <div class="about__modal" style="background: #ff3535;">
                 <h1>Creditors</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores itaque nam accusamus hic sed eligendi omnis soluta, id rem, facere rerum vero quidem nisi, numquam reiciendis assumenda laborum animi!</p>
+                <p>Reclaim recieveables you though were lost. Enable your frim to collect on average 2X more than typical collection processes.</p>
                 <div class="about__modal__btn__wrapper">
                     <button class="about__modal__btn">Get Started</button>
                 </div>
             </div>
             <div class="about__modal" style="background: #3c8ff5;">
                 <h1>Partners</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores itaque nam accusamus hic sed eligendi omnis soluta, id rem, facere rerum vero quidem nisi, numquam reiciendis assumenda laborum animi!</p>
+                <p>Payoff helps CPA's, bankruptcy lawyers, turnaround management firms, and others keep their clients in business. </p>
                 <div class="about__modal__btn__wrapper">
                 <button class="about__modal__btn">Get Started</button>
                 </div>
             </div>
         </div>
         </section>
-        <section class="testimonials">
-
+        <section class="testimonials" id="testimonials">
+            <h1>Hear from our clients</h1>
+            <div class="test__modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia qui amet nostrum odio, ea numquam, veritatis quos explicabo neque fuga asperiores dolorem consectetur! Repellendus quibusdam voluptatum velit consequuntur magni.</p>
+                <h5>Client Name</h5>
+            </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
 
         </section>
     </div>
