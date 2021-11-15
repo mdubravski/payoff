@@ -7,6 +7,7 @@
 body {
     font-family: Noto Sans, sans-serif;
     background-color: #f6f8fa;
+    
 }
 
 /* Start Nav */
@@ -358,7 +359,83 @@ a:hover {
 /* End Testimonials */
 /* Start Contact */
 .contact{
-  height: 100vh;
+  height: fit-content;
+  background-color: #24292f;
+  padding-bottom: 1.5rem;
 }
 
+.contact h1{
+  font-size: 46px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  color: #fff;
+}
+
+.contact__grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1.rem;
+}
+
+.contact__form{
+  padding: 1rem;
+  color: #fff;
+  font-size: 18px;
+  background-color: #051427;
+  border-radius: 10px;
+  padding: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+ #submit{
+  margin-top: 1rem;
+  border: none;
+  background-color: #88c53a;
+  border-radius: 10px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
+}
 /* End Contact */
+/* Start Footer */
+ .footer{
+  background-color: #051427;
+  height: fit-content;
+ }
+
+ .footer__grid{
+   display: grid;
+   align-items: center;
+   justify-content: left;
+   grid-gap: .5rem;
+   margin: .5rem;
+   padding-left: 1.5rem;
+
+ }
+
+ .footer__logo h1{
+   color:#fff;
+   padding-left: 0px;
+ }
+
+ .footer__sitemap ul{
+  list-style: none;
+  text-decoration-style: none;
+ }
+
+ .footer__tel{
+   color: #fff;
+ }
+ 
+ .dev__banner{
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   opacity: 0.75;
+ }
+/* End Footer */

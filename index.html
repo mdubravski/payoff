@@ -101,7 +101,69 @@
         </div>
         </section>
         <section class="contact" id="contact">
-            
+            <div class="contact__text">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact__grid">
+            <div class="contact__form">
+                <div class="content__logo">
+                    <h1 class="logo">Payoff</h1>
+                </div>
+                <form action="" method="post">
+                    <label for="contact__type">I am a</label>
+                    <br>
+                    <select name = "dropdown" required>
+                        <option value = "sb" selected>Small Business</option>
+                        <option value = "c">Creditor</option>
+                        <option value = "p">Business with Business Clients in Debt</option>
+                        <option value = "Other">Other</option>
+                     </select>
+                     <br>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input required type="text" name="firstname" placeholder="John" maxlength="100">
+                    <br>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input required type="text" name="lastname" placeholder="Doe" maxlength="100">
+                    <br>
+                    <label  for="businessname">Business Name</label>
+                    <br>
+                    <input type="text" name="businessname" placeholder="Payoff" maxlength="100">   
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input required type="email" name="businessname" placeholder="john@payoff.biz" maxlength="100">   
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input required type="tel" name="phone" placeholder="555-555-5555" maxlength="20">   
+                    <br>
+                    <input type = "submit" name = "submit" value = "Submit" id="submit" />
+                </form>
+            </div>
+        </div>
+        </section>
+        <section class="footer">
+            <div class="footer__grid">
+                <div class="footer__logo">
+                    <h1 class="logo">Payoff</h1>
+                </div>
+                <div class="footer__sitemap">
+                    <ul class="sitemap">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__tel">
+                    <h3>555-555-5555</h3>
+                </div>
+            </div>
+            <div class="dev__banner">
+                <h6>Made by <a href="https://www.github.com/mdubravski" target="__blank">@mdubravski</a></h6>
+            </div>
         </section>
     </div>
     <script src="particles.js"></script>
