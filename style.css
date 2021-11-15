@@ -153,8 +153,12 @@ a:hover {
 
 /* Start Home Content */
 @media (max-width: 600px) {
+  .logo__home h1{
+    font-size: 60px;
+  }
   .content__text{
     font-size: 14px;
+    width: 300px;
   }
 }
 .wrapper {
@@ -172,7 +176,8 @@ a:hover {
     height: 100vh;
     width: 100%;
     left: 0;
-    z-index: -10;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .home{
@@ -424,7 +429,7 @@ a:hover {
   margin-top: 1rem;
   border: none;
   background-color: #88c53a;
-  border-radius: 10px;
+  border-radius: 4px;
   font-family: Noto Sans, sans-serif;
   font-size: 15px;
   height: 40px;
