@@ -19,5 +19,6 @@ hamburger.addEventListener('click', () => {
 });
 
 
+document.body.addEventListener('touchstart', function(e){ e.preventDefault()});
 
 

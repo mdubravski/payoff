@@ -11,11 +11,13 @@ body {
 
 html, body {
   overflow-x: hidden;
+  
 }
 
 
 /* Start Nav */
 .nav {
+    position: sticky;
     display: grid;
     min-height: 4rem;
     grid-auto-flow: column;
