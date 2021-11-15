@@ -413,7 +413,8 @@ a:hover {
 /* Start Footer */
  .footer{
    bottom: 0px;
-   width: 100vh;
+   width: 100vw;
+   
   background-color: #051427;
   height: fit-content;
  }
