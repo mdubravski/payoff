@@ -10,14 +10,15 @@ body {
 }
 
 html, body {
-  overflow-x: hidden;
   height: 100%;
+  overflow-x: hidden;
 }
 
 
 /* Start Nav */
 .nav {
-    position: sticky;
+    position: fixed;
+    width: 100vw;
     display: grid;
     min-height: 4rem;
     grid-auto-flow: column;
@@ -72,6 +73,7 @@ a:hover {
   background-color: #24292f;
   z-index: 9999;
   list-style: none;
+  margin-top: 4rem;
 }
 
 .menu__item{
@@ -87,7 +89,7 @@ a:hover {
 }
 
 .open{
-  left: 65%;
+  left: 50%;
 }
 
 .hide{
