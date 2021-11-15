@@ -235,7 +235,7 @@ a:hover {
   align-items: center;
   height: fit-content;
   padding: 2rem;
-
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
 }
 
 .about__text{
@@ -249,6 +249,7 @@ a:hover {
   font-weight: 200;
   color: rgb(156, 156, 156);
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about__h1{
@@ -304,7 +305,7 @@ a:hover {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .about__text{
     grid-template-columns: repeat(1,1fr);
     grid-gap: 3rem;
@@ -319,15 +320,45 @@ a:hover {
 
 /* Start Testimonials */
 .testimonials{
-  height: 100vh;
+  height: fit-content;
   box-sizing: border-box;
   display: grid;
-  background-color: #24292f;
+  background-color: #051326;
   color: #fff;
   align-items: center;
+  padding: 1.5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+
+.testimonials h1{
+  font-size: 46px;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 1.5rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.testimonial__quote{
+  padding: 1rem;
+  background: #3c8ff5;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-weight: 100;
 }
 
 /* End Testimonials */
+/* Start Contact */
 .contact{
   height: 100vh;
 }
+
+/* End Contact */
