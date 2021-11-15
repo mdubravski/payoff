@@ -412,6 +412,8 @@ a:hover {
 /* End Contact */
 /* Start Footer */
  .footer{
+   bottom: 0px;
+   width: 100vh;
   background-color: #051427;
   height: fit-content;
  }
