@@ -18,4 +18,6 @@ hamburger.addEventListener('click', () => {
     }
 });
 
+document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
 
