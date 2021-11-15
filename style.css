@@ -152,6 +152,8 @@ a:hover {
     display: grid;
     grid-template-rows: repeat(4,fit-content);
     overflow: hidden;
+    align-items: center;
+    
 }
 
 #particles-js {
@@ -452,5 +454,6 @@ a:hover {
    align-items: center;
    justify-items: center;
    opacity: 0.75;
+   color: #fff;
  }
 /* End Footer */
