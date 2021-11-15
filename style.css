@@ -251,7 +251,7 @@ a:hover {
   align-items: center;
   height: fit-content;
   padding: 2rem;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .about__text{
@@ -396,7 +396,6 @@ a:hover {
 }
 
 .contact__form{
-  padding: 1rem;
   color: #fff;
   font-size: 18px;
   background-color: #051427;
